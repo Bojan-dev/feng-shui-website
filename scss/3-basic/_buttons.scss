@@ -1,0 +1,20 @@
+//Buttons - <a> tag
+
+a.btn {
+  background: var(--blue-light);
+  color: var(--white);
+  border-radius: 10px;
+  @include letter-spacing(10);
+  font-weight: 500;
+}
+
+a.hero-btn {
+  font-size: 1.55em;
+  font-weight: 500;
+  padding: 0.857em 2.285em;
+}
+
+a.other-btns {
+  font-size: 1.44em;
+  padding: 0.923em 2.461em;
+}

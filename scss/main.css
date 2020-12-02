@@ -1,20 +1,25 @@
-.hero-svg {
-  position: absolute;
-  right: 0;
-  top: 0;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.logo-place {
+a.btn {
   background: var(--blue-light);
-  width: 156px;
-  height: 163px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  position: absolute;
-  left: 50%;
-  border-radius: 0 0 50% 50%;
-  -webkit-box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
-  box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
+  color: var(--white);
+  border-radius: 10px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+a.hero-btn {
+  font-size: 1.55em;
+  font-weight: 500;
+  padding: 0.857em 2.285em;
+}
+
+a.other-btns {
+  font-size: 1.44em;
+  padding: 0.923em 2.461em;
 }
 
 :root {
@@ -22,6 +27,9 @@
   --blue-darker: #294972;
   --beige-main: #d3a375;
   --beige-lighter: #e6cbb2;
+  --black-text: #333333;
+  --white: #ffffff;
+  --big-text: #f9f9f9;
   --blue-gradient: linear-gradient(
     180deg,
     rgba(53, 96, 149, 1) 0%,
@@ -43,7 +51,85 @@
           box-sizing: border-box;
 }
 
-body {
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
+  color: var(--black-text);
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 1.7;
+}
+
+h1,
+h2 {
+  font-size: 3.222em;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 1.667em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.166em;
+  color: var(--white);
+}
+
+.program-title {
+  font-size: 1.444em;
+}
+
+.big-section-title {
+  color: var(--big-text);
+  font-size: 14.555em;
+  font-weight: 700;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.logo-place {
+  background: var(--blue-light);
+  width: 156px;
+  height: 163px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 0 0 50% 50%;
+  -webkit-box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
 }
 /*# sourceMappingURL=main.css.map */

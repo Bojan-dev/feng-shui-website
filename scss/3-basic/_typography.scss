@@ -1,0 +1,41 @@
+html {
+  font-size: 18px; //1em = 18px
+  font-family: 'Montserrat', sans-serif;
+  color: var(--black-text);
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  @include letter-spacing(5);
+  line-height: 1.7;
+}
+
+h1,
+h2 {
+  font-size: 3.222em;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 1.667em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.166em;
+  color: var(--white);
+}
+
+.program-title {
+  font-size: 1.444em;
+}
+
+.big-section-title {
+  color: var(--big-text);
+  font-size: 14.555em;
+  font-weight: 700;
+}
