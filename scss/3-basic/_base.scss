@@ -1,0 +1,18 @@
+.hero-svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.logo-place {
+  background: var(--blue-light);
+  width: 156px;
+  height: 163px;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  border-radius: 0 0 50% 50%;
+  -webkit-box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
+}

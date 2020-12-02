@@ -1,0 +1,49 @@
+.hero-svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.logo-place {
+  background: var(--blue-light);
+  width: 156px;
+  height: 163px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  border-radius: 0 0 50% 50%;
+  -webkit-box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.09);
+}
+
+:root {
+  --blue-light: #366196;
+  --blue-darker: #294972;
+  --beige-main: #d3a375;
+  --beige-lighter: #e6cbb2;
+  --blue-gradient: linear-gradient(
+    180deg,
+    rgba(53, 96, 149, 1) 0%,
+    rgba(41, 73, 114, 1) 100%
+  );
+  --blue-light-gradient: linear-gradient(
+    90deg,
+    rgba(109, 129, 215, 1) 0%,
+    rgba(8, 174, 234, 1) 100%
+  );
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+:root {
+  --blue-light: #366196;
+  --blue-darker: #294972;
+  --beige-main: #d3a375;
+  --beige-lighter: #e6cbb2;
+  --blue-gradient: linear-gradient(
+    180deg,
+    rgba(53, 96, 149, 1) 0%,
+    rgba(41, 73, 114, 1) 100%
+  );
+  --blue-light-gradient: linear-gradient(
+    90deg,
+    rgba(109, 129, 215, 1) 0%,
+    rgba(8, 174, 234, 1) 100%
+  );
+}
