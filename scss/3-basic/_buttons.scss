@@ -4,14 +4,43 @@ a.btn {
   background: var(--blue-light);
   color: var(--white);
   border-radius: 10px;
-  @include letter-spacing(10);
   font-weight: 500;
 }
 
 a.hero-btn {
-  font-size: 1.55em;
+  position: relative;
+  font-size: 1.5em;
   font-weight: 500;
-  padding: 0.857em 2.285em;
+  padding: 0.75em 2.285em;
+
+  span {
+    z-index: 1;
+    position: relative;
+  }
+
+  &:hover::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: var(--blue-light-gradient-angle);
+    border-radius: 10px;
+    animation: mainBtn 1s ease;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes mainBtn {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 a.other-btns {

@@ -7,14 +7,56 @@ a.btn {
   background: var(--blue-light);
   color: var(--white);
   border-radius: 10px;
-  letter-spacing: 0.01em;
   font-weight: 500;
 }
 
 a.hero-btn {
-  font-size: 1.55em;
+  position: relative;
+  font-size: 1.5em;
   font-weight: 500;
-  padding: 0.857em 2.285em;
+  padding: 0.75em 2.285em;
+}
+
+a.hero-btn span {
+  z-index: 1;
+  position: relative;
+}
+
+a.hero-btn:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  background: var(--blue-light-gradient-angle);
+  border-radius: 10px;
+  -webkit-animation: mainBtn 1s ease;
+          animation: mainBtn 1s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes mainBtn {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes mainBtn {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 }
 
 a.other-btns {
@@ -54,6 +96,10 @@ a.other-btns {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
 }
 
 li a {
@@ -110,6 +156,14 @@ h4 {
   font-weight: 700;
 }
 
+.title-span {
+  color: var(--blue-light);
+}
+
+header {
+  height: 96vh;
+}
+
 nav {
   margin-top: 35px;
   width: 100%;
@@ -140,7 +194,7 @@ nav {
 
 .name-profession p {
   font-family: 'Merienda', cursive;
-  font-size: 0.777em;
+  font-size: 0.7em;
   color: var(--blue-light);
 }
 
@@ -197,13 +251,13 @@ nav {
 }
 
 .nav-list li:first-child {
-  -webkit-transform: translateX(-160%);
-          transform: translateX(-160%);
+  -webkit-transform: translateX(-225%);
+          transform: translateX(-225%);
 }
 
 .nav-list li:last-child {
-  -webkit-transform: translateX(180%);
-          transform: translateX(180%);
+  -webkit-transform: translateX(270%);
+          transform: translateX(270%);
 }
 
 .nav-list li:last-child a {
@@ -215,6 +269,8 @@ nav {
   right: 0;
   top: 0;
   z-index: -1;
+  width: 58vw;
+  height: auto;
 }
 
 .logo-place {
@@ -274,5 +330,75 @@ nav {
 .logo {
   width: 65%;
   margin-bottom: 15%;
+}
+
+main {
+  margin-top: 22.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-title {
+  margin-bottom: 0.344em;
+  width: 45%;
+}
+
+.hero-text {
+  margin-bottom: 3.5em;
+  width: 45%;
+}
+
+.sections-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  bottom: 50px;
+}
+
+.section-shortcut {
+  width: 10px;
+  height: 10px;
+  background: var(--beige-lighter);
+  border-radius: 50%;
+  margin: 0 0.833em 0 0.833em;
+  position: relative;
+  cursor: pointer;
+}
+
+.section-shortcut:hover {
+  background: var(--beige-main);
+}
+
+.hero-social-networks {
+  background: var(--beige-main);
+  display: inline-block;
+  padding: 0.8333em;
+  border-radius: 80px 0 0 80px;
+  position: absolute;
+  bottom: 50px;
+  right: -205px;
+}
+
+.hero-social-networks .fab {
+  color: var(--white);
+  margin: 0 1em 0 1em;
+}
+
+.hero-social-networks .fab:first-of-type {
+  margin-left: 2em;
 }
 /*# sourceMappingURL=main.css.map */
