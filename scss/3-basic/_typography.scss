@@ -2,13 +2,13 @@ html {
   font-size: 18px; //1em = 18px
   font-family: 'Montserrat', sans-serif;
   color: var(--black-text);
+  font-weight: 400;
+  @include letter-spacing(5);
+  line-height: 1.7;
 }
 
 p {
   font-size: 1em;
-  font-weight: 400;
-  @include letter-spacing(5);
-  line-height: 1.7;
 }
 
 h1,

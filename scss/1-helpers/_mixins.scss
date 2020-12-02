@@ -2,8 +2,8 @@
   letter-spacing: ($spacing / 1000) * 1em;
 }
 
-@mixin displayFlex($justify-content, $align-items) {
+@mixin displayFlex($flex-direction, $justify-content) {
   display: flex;
+  flex-direction: $flex-direction;
   justify-content: $justify-content;
-  align-items: $align-items;
 }
