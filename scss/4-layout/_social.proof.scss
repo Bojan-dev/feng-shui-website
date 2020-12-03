@@ -1,0 +1,41 @@
+.social-proof {
+  background: var(--blue-light-gradient);
+  margin: 5.555em 0 8.333em 0;
+  padding: 2.777em 0;
+}
+
+.all-proofs {
+  @include displayFlex(row, space-between);
+  color: var(--white);
+}
+
+.proof {
+  @include displayFlex(row, flex-start);
+  align-items: center;
+  width: 100%;
+}
+
+.proof-icon-container {
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proof-icon {
+  width: 65%;
+}
+
+.proof-text {
+  margin-left: 1.667em;
+}
+
+.separate-line {
+  width: 2px;
+  background: var(--white);
+  height: 50%;
+  margin: auto;
+}
