@@ -7,6 +7,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .name-profession {
@@ -23,41 +24,33 @@ nav {
 }
 
 .nav-list {
-  @include displayFlex(row, center);
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
+  @include displayFlex(row, flex-end);
+  gap: 4em;
 
   li {
     position: relative;
     font-size: 0.888em;
 
-    &:hover::before {
+    &:hover::after {
       content: '';
       position: absolute;
-      bottom: -2px;
-      height: 1px;
-      background: var(--beige-main);
-      animation: moveToRight 0.5s ease;
-      animation-fill-mode: forwards;
-    }
-  }
-
-  @keyframes moveToRight {
-    0% {
-      width: 0px;
-    }
-    100% {
       width: 50%;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background: var(--beige-main);
+      animation: moveToRight 0.5s ease-in-out;
     }
-  }
 
-  li:first-child {
-    transform: translateX(-225%);
-  }
+    @keyframes moveToRight {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 50%;
+      }
+    }
 
-  li:last-child {
-    transform: translateX(270%);
     a {
       color: var(--white);
     }
@@ -65,12 +58,11 @@ nav {
 }
 
 .hero-svg {
-  position: absolute;
-  right: 0;
-  top: 0;
   z-index: -1;
-  width: 58vw;
-  height: auto;
+  width: 57.5vw;
+  top: 0;
+  right: 0;
+  position: absolute;
 }
 
 .logo-place {
@@ -98,7 +90,7 @@ nav {
     background: var(--blue-light-gradient-angle);
     border-radius: 0 0 50% 50%;
     z-index: -1;
-    animation: logoFill 1s ease;
+    animation: logoFill 1s ease-in-out;
     animation-fill-mode: forwards;
   }
   @keyframes logoFill {
