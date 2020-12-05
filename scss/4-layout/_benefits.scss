@@ -1,6 +1,14 @@
-.benefits-container {
+.benefits-wrapper {
   width: 100%;
+  @include displayFlex(row, center);
+  align-items: center;
   position: relative;
+}
+
+.benefits-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
   @include divShadow;
   border-radius: 15px;
   margin-top: 6.667em;
@@ -9,6 +17,7 @@
   background: url('/img/benefits\ section.webp') no-repeat center 25px;
   background-size: cover;
   padding: 6.667em 0 3.33em 0;
+  height: 650px;
 }
 
 .benefits-container-top-line {
@@ -22,11 +31,13 @@
 }
 
 .benefit-slider {
-  margin: auto;
-  margin-top: 2.777em;
+  position: absolute;
   width: 15%;
   @include displayFlex(row, space-between);
   align-items: center;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 3em;
 }
 
 .benefit-slider-icon-container {
@@ -68,18 +79,51 @@
   }
 }
 
+.all-benefits-slider {
+  width: 100%;
+  position: absolute;
+  height: fit-content;
+  @include displayFlex(row, space-between);
+  align-items: center;
+}
+
 .benefit-wrapper {
-  position: relative;
-  width: 75%;
-  margin: auto;
+  position: absolute;
+  width: 60%;
   border-radius: 75px 0 75px 0;
+  transform: translateX(-50%);
+  left: 50%;
   padding: 1.388em 2.77em;
   background-size: cover;
   background-position: center;
+  margin-top: -1em;
 }
 
 .benefit-wrapper-1 {
   @include backgroundGradient('/img/overall\ wellbeing.webp');
+}
+
+.benefit-wrapper-2 {
+  @include backgroundGradient('/img/improve\ sucess.webp');
+  transform: translateX(-175%);
+}
+
+.benefit-wrapper-3 {
+  @include backgroundGradient('/img/clearing\ bad\ energy.webp');
+  transform: translateX(75%);
+}
+
+.side-benefit-wrapper {
+  height: 250px;
+  font-size: 0.5em;
+
+  .benefit-icon {
+    height: 150px;
+  }
+
+  .benefit-read-more {
+    display: none;
+  }
 }
 
 .benefit-title {

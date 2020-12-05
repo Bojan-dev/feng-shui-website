@@ -73,7 +73,7 @@ main {
 
     &:hover::before {
       font-size: 1.2em;
-      background: var(--blue-light);
+      background: var(--blue-light-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: initial; /* reset Font Awesome's display:inline-block */

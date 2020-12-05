@@ -31,8 +31,8 @@ a.hero-btn:hover::before {
   height: 100%;
   background: var(--blue-light-gradient-angle);
   border-radius: 10px;
-  -webkit-animation: mainBtn 1s ease-in-out;
-          animation: mainBtn 1s ease-in-out;
+  -webkit-animation: mainBtn 0.75s ease-in-out;
+          animation: mainBtn 0.75s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -300,8 +300,8 @@ nav {
   background: var(--blue-light-gradient-angle);
   border-radius: 0 0 50% 50%;
   z-index: -1;
-  -webkit-animation: logoFill 1s ease-in-out;
-          animation: logoFill 1s ease-in-out;
+  -webkit-animation: logoFill 0.75s ease-in-out;
+          animation: logoFill 0.75s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -434,7 +434,7 @@ main {
 
 .hero-social-networks .fab:hover::before {
   font-size: 1.2em;
-  background: var(--blue-light);
+  background: var(--blue-light-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial;
@@ -537,9 +537,28 @@ main {
   margin: auto;
 }
 
-.benefits-container {
+.benefits-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+}
+
+.benefits-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.27);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.27);
   border-radius: 15px;
@@ -549,6 +568,7 @@ main {
   background: url("/img/benefits section.webp") no-repeat center 25px;
   background-size: cover;
   padding: 6.667em 0 3.33em 0;
+  height: 650px;
 }
 
 .benefits-container-top-line {
@@ -563,8 +583,7 @@ main {
 }
 
 .benefit-slider {
-  margin: auto;
-  margin-top: 2.777em;
+  position: absolute;
   width: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,6 +598,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  bottom: 3em;
 }
 
 .benefit-slider-icon-container {
@@ -638,19 +661,70 @@ main {
   }
 }
 
+.all-benefits-slider {
+  width: 100%;
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .benefit-wrapper {
-  position: relative;
-  width: 75%;
-  margin: auto;
+  position: absolute;
+  width: 60%;
   border-radius: 75px 0 75px 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
   padding: 1.388em 2.77em;
   background-size: cover;
   background-position: center;
+  margin-top: -1em;
 }
 
 .benefit-wrapper-1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/overall wellbeing.webp");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/overall wellbeing.webp");
+}
+
+.benefit-wrapper-2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/improve sucess.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/improve sucess.webp");
+  -webkit-transform: translateX(-175%);
+          transform: translateX(-175%);
+}
+
+.benefit-wrapper-3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/clearing bad energy.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/clearing bad energy.webp");
+  -webkit-transform: translateX(75%);
+          transform: translateX(75%);
+}
+
+.side-benefit-wrapper {
+  height: 250px;
+  font-size: 0.5em;
+}
+
+.side-benefit-wrapper .benefit-icon {
+  height: 150px;
+}
+
+.side-benefit-wrapper .benefit-read-more {
+  display: none;
 }
 
 .benefit-title {
