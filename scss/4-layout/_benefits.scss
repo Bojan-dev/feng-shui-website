@@ -99,18 +99,25 @@
   margin-top: -1em;
 }
 
-.benefit-wrapper-1 {
+.benefit-overall-wellbeing {
   @include backgroundGradient('/img/overall\ wellbeing.webp');
 }
 
-.benefit-wrapper-2 {
-  @include backgroundGradient('/img/improve\ sucess.webp');
+.left-slider-div {
   transform: translateX(-175%);
 }
 
-.benefit-wrapper-3 {
-  @include backgroundGradient('/img/clearing\ bad\ energy.webp');
+.benefit-improve-success {
+  @include backgroundGradient('/img/improve\ sucess.webp');
+}
+
+.right-slider-div {
   transform: translateX(75%);
+  z-index: -1;
+}
+
+.benefit-clearing-bad-energy {
+  @include backgroundGradient('/img/clearing\ bad\ energy.webp');
 }
 
 .side-benefit-wrapper {

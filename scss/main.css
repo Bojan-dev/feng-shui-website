@@ -695,23 +695,30 @@ main {
   margin-top: -1em;
 }
 
-.benefit-wrapper-1 {
+.benefit-overall-wellbeing {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/overall wellbeing.webp");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/overall wellbeing.webp");
 }
 
-.benefit-wrapper-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/improve sucess.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/improve sucess.webp");
+.left-slider-div {
   -webkit-transform: translateX(-175%);
           transform: translateX(-175%);
 }
 
-.benefit-wrapper-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/clearing bad energy.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/clearing bad energy.webp");
+.benefit-improve-success {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/improve sucess.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/improve sucess.webp");
+}
+
+.right-slider-div {
   -webkit-transform: translateX(75%);
           transform: translateX(75%);
+  z-index: -1;
+}
+
+.benefit-clearing-bad-energy {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/clearing bad energy.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/clearing bad energy.webp");
 }
 
 .side-benefit-wrapper {
