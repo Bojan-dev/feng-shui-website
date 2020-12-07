@@ -1,0 +1,78 @@
+.programs-feature {
+  margin-top: 7.222em;
+}
+
+.programs-feature-section-description {
+  margin: 4em 0 5.555em 0;
+}
+
+.programs-features-each-program {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 47.5% 52.5%;
+}
+
+.programs-features-program-description-chair {
+  position: relative;
+  @include displayFlex(row, center);
+  align-items: center;
+  width: 100%;
+}
+
+.programs-features-section-illustration {
+  right: 0;
+  width: 30%;
+  transform: translateX(35%);
+}
+
+.programs-features-photo-slider {
+}
+
+.programs-features-program-description {
+  width: 85.5%;
+}
+
+.program-description-title-btn {
+  @include displayFlex(row, space-between);
+  align-items: center;
+}
+
+.program-description-btn {
+  background: var(--blue-darker);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover::before {
+    content: '';
+    position: absolute;
+    background: var(--blue-light-gradient-angle);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -1;
+
+    animation: benefitsSlider 0.5s ease-in-out;
+  }
+}
+
+.programs-features-short-description {
+  margin: 1.944em 0 2.5em 0;
+}
+
+.what-program-brings {
+  @include displayFlex(row, flex-start);
+  align-items: center;
+  margin-bottom: 1.111em;
+}
+
+.program-brings-check-icon {
+  margin-right: 1.111em;
+}

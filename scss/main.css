@@ -110,6 +110,19 @@ li a {
   color: var(--black-text);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dcb793;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--beige-main);
+}
+
 a {
   text-decoration: none;
 }
@@ -831,6 +844,124 @@ main {
 
 .benefit-read-more-icon:hover div {
   background: var(--white);
+}
+
+.programs-feature {
+  margin-top: 7.222em;
+}
+
+.programs-feature-section-description {
+  margin: 4em 0 5.555em 0;
+}
+
+.programs-features-each-program {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 47.5% 52.5%;
+      grid-template-columns: 47.5% 52.5%;
+}
+
+.programs-features-program-description-chair {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.programs-features-section-illustration {
+  right: 0;
+  width: 30%;
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+}
+
+.programs-features-program-description {
+  width: 85.5%;
+}
+
+.program-description-title-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program-description-btn {
+  background: var(--blue-darker);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.program-description-btn:hover::before {
+  content: '';
+  position: absolute;
+  background: var(--blue-light-gradient-angle);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+  -webkit-animation: benefitsSlider 0.5s ease-in-out;
+          animation: benefitsSlider 0.5s ease-in-out;
+}
+
+.programs-features-short-description {
+  margin: 1.944em 0 2.5em 0;
+}
+
+.what-program-brings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.111em;
+}
+
+.program-brings-check-icon {
+  margin-right: 1.111em;
 }
 
 .section-title {
