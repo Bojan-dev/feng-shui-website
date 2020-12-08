@@ -95,6 +95,7 @@
   left: 50%;
   padding: 1.388em 2.77em;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   margin-top: -1em;
 }
@@ -104,7 +105,9 @@
 }
 
 .left-slider-div {
-  transform: translateX(-175%);
+  left: 0;
+  transform: translateX(-75%);
+  z-index: -1;
 }
 
 .benefit-improve-success {
@@ -112,7 +115,8 @@
 }
 
 .right-slider-div {
-  transform: translateX(75%);
+  right: 0;
+  transform: translateX(175%);
   z-index: -1;
 }
 
@@ -120,9 +124,18 @@
   @include backgroundGradient('/img/clearing\ bad\ energy.webp');
 }
 
+.benefit-your-goal {
+  @include backgroundGradient('/img/realize\ goal.webp');
+}
+
+.benefit-your-potential {
+  @include backgroundGradient('/img/full\ potential.webp');
+}
+
 .side-benefit-wrapper {
   height: 250px;
   font-size: 0.5em;
+  width: 25%;
 
   .benefit-icon {
     height: 150px;

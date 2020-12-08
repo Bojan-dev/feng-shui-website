@@ -10,6 +10,21 @@
   width: 100%;
   display: grid;
   grid-template-columns: 47.5% 52.5%;
+
+  &:last-of-type {
+    margin-top: 11.5em;
+    grid-template-columns: 52.5% 47.5%;
+
+    .programs-features-program-description-chair {
+      flex-direction: row-reverse;
+
+      .programs-features-section-illustration {
+        left: 0;
+        width: 30%;
+        transform: translateX(-40%);
+      }
+    }
+  }
 }
 
 .programs-features-program-description-chair {
@@ -33,7 +48,7 @@
 }
 
 .program-description-title-btn {
-  @include displayFlex(row, space-between);
+  @include displayFlex(row, flex-start);
   align-items: center;
 }
 
@@ -42,6 +57,7 @@
   width: 50px;
   height: 50px;
   border-radius: 10px;
+  margin-left: 5em;
   color: var(--white);
   display: flex;
   justify-content: center;

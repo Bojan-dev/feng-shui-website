@@ -1,0 +1,192 @@
+.each-programs-pricing {
+  width: 90%;
+  margin: auto;
+  margin-top: 6.944em;
+  @include displayFlex(row, flex-start);
+  align-self: flex-start;
+  border: 0.5px solid #e8edf3;
+  @include divShadow;
+
+  &:hover {
+    .program-pricing-icon {
+      transform: scale(1.2);
+      top: -25px;
+    }
+
+    .program-pricing-big-pic {
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: -webkit-linear-gradient(
+          left,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.3) 100%
+        );
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.3) 100%
+        );
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+        -webkit-animation: shine 0.75s;
+        animation: shine 0.75s;
+      }
+      @-webkit-keyframes shine {
+        100% {
+          left: 125%;
+        }
+      }
+    }
+  }
+
+  &:last-of-type {
+    flex-direction: row-reverse;
+    .program-pricing-big-pic {
+      background: url('/img/business\ project\ pic.webp') no-repeat center;
+      background-size: cover;
+    }
+    .program-pricing-description-price {
+      .program-pricing-price-list {
+        border-radius: 10px;
+        text-align: center;
+        padding: 2em;
+      }
+    }
+  }
+}
+
+.program-pricing-big-pic,
+.program-pricing-description-price {
+  width: 50%;
+}
+
+.program-pricing-big-pic {
+  background: url('/img/residential\ project\ pic.webp') no-repeat center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-pricing-description-price {
+  @include displayFlex(column, center);
+  align-items: center;
+  position: relative;
+}
+
+.program-pricing-stars-row {
+  color: var(--beige-main);
+}
+
+.program-pricing-icon {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  transition: 0.5s ease-in-out;
+}
+
+.program-pricing-separation-line {
+  margin: 1.944em 0 1.667em 0;
+  width: 20px;
+  height: 1px;
+  background: var(--beige-main);
+}
+
+.program-pricing-price-list {
+  width: 85%;
+  background: var(--blue-light);
+  padding: 1em 5em 1em 5em;
+  margin-bottom: 1.111em;
+  border-radius: 100px;
+  @include displayFlex(row, space-between);
+  align-items: center;
+  color: var(--white);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.price-up-to-meter {
+  @include displayFlex(row, flex-start);
+  align-items: center;
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--beige-main);
+    border: 1px solid var(--white);
+    margin-right: 1.111em;
+  }
+}
+
+.program-pricing-all-benefits {
+  margin: 3.888em 0;
+}
+
+.each-benefit {
+  @include displayFlex(row, flex-start);
+  margin-bottom: 1.388em;
+  align-items: center;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-right: 1.111em;
+  }
+}
+
+.pricing-btn {
+  &:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    z-index: -1;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--blue-light-gradient-angle);
+    animation: mainBtn 0.75s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+.pricing-btn-second {
+  &:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    z-index: -1;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: var(--blue-light-gradient-angle);
+    animation: mainBtn2 0.75s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes mainBtn2 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+.pricing-program-last-text {
+  width: 85%;
+  text-align: center;
+  margin-bottom: 1.944em;
+}
