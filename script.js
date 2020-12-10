@@ -34,6 +34,9 @@ const arrayReverseRotate = function (arr) {
   return arr;
 };
 
+benefitArray[2].style.zIndex = '2';
+benefitArray[1].style.zIndex = '3';
+
 nextBtn.addEventListener('click', () => {
   benefitArray[0].classList.toggle('main-slider-div');
   benefitArray[0].classList.toggle('right-slider-div');
@@ -47,8 +50,8 @@ nextBtn.addEventListener('click', () => {
   benefitArray[2].classList.toggle('left-slider-div');
   benefitArray[2].style.transition = '.75s ease-in-out';
   benefitArray[0].style.zIndex = '4';
-  benefitArray[1].style.zIndex = '2';
-  benefitArray[2].style.zIndex = '3';
+  benefitArray[1].style.zIndex = '3';
+  benefitArray[2].style.zIndex = '2';
   benefitArray[3].style.zIndex = '4';
   benefitArray[4].style.zIndex = '5';
   benefitArray = arrayRotate(benefitArray);
