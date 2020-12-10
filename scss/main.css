@@ -395,10 +395,32 @@ main {
   width: 10px;
   height: 10px;
   background: var(--white);
-  border: 2px solid var(--beige-lighter);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid var(--beige-main);
   border-radius: 50%;
   position: relative;
   cursor: pointer;
+}
+
+.section-shortcut p {
+  position: absolute;
+  text-align: center;
+  display: none;
+  bottom: 1.5em;
+  color: var(--beige-main);
+  font-size: 0.825em;
+}
+
+.section-shortcut:hover p {
+  display: initial;
 }
 
 .section-shortcut:hover::after {

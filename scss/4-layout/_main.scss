@@ -27,10 +27,28 @@ main {
   width: 10px;
   height: 10px;
   background: var(--white);
-  border: 2px solid var(--beige-lighter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--beige-main);
   border-radius: 50%;
   position: relative;
   cursor: pointer;
+
+  p {
+    position: absolute;
+    text-align: center;
+    display: none;
+    bottom: 1.5em;
+    color: var(--beige-main);
+    font-size: 0.825em;
+  }
+
+  &:hover {
+    p {
+      display: initial;
+    }
+  }
 
   &:hover::after {
     content: '';
