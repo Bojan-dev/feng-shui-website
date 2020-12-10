@@ -19,10 +19,67 @@ const counter = curoselDivs.length;
 // curoselDivs.some(({ classList }) => classList.contains('main-slider-div'));
 
 //Buttons
-const prevBtn = document.querySelector('.benefits-slider-icon-left');
-const nextBtn = document.querySelector('.benefits-slider-icon-right');
-const benefitArray = document.getElementsByClassName('benefit-wrapper');
+const prevBtn = document.querySelector('.prev-slider-icon');
+const nextBtn = document.querySelector('.next-slider-icon');
+const benefitHtml = document.getElementsByClassName('benefit-wrapper');
+let benefitArray = Array.from(benefitHtml);
 
+const arrayRotate = function (arr) {
+  arr.unshift(arr.pop());
+  return arr;
+};
+
+const arrayReverseRotate = function (arr) {
+  arr.push(arr.shift());
+  return arr;
+};
+
+nextBtn.addEventListener('click', () => {
+  benefitArray[0].classList.toggle('main-slider-div');
+  benefitArray[0].classList.toggle('right-slider-div');
+  benefitArray[0].classList.toggle('side-benefit-wrapper');
+  benefitArray[0].style.transition = '.75s ease-in-out';
+  benefitArray[4].classList.toggle('main-slider-div');
+  benefitArray[4].classList.toggle('left-slider-div');
+  benefitArray[4].classList.toggle('side-benefit-wrapper');
+  benefitArray[4].style.transition = '.75s ease-in-out';
+  benefitArray[2].classList.toggle('right-slider-div');
+  benefitArray[2].classList.toggle('left-slider-div');
+  benefitArray[2].style.transition = '.75s ease-in-out';
+  benefitArray[0].style.zIndex = '4';
+  benefitArray[1].style.zIndex = '2';
+  benefitArray[2].style.zIndex = '3';
+  benefitArray[3].style.zIndex = '4';
+  benefitArray[4].style.zIndex = '5';
+  benefitArray = arrayRotate(benefitArray);
+});
+
+prevBtn.addEventListener('click', () => {
+  benefitArray[0].classList.toggle('main-slider-div');
+  benefitArray[0].classList.toggle('left-slider-div');
+  benefitArray[0].classList.toggle('side-benefit-wrapper');
+  benefitArray[0].style.transition = '.75s ease-in-out';
+  benefitArray[1].classList.toggle('main-slider-div');
+  benefitArray[1].classList.toggle('right-slider-div');
+  benefitArray[1].classList.toggle('side-benefit-wrapper');
+  benefitArray[1].style.transition = '.75s ease-in-out';
+  benefitArray[3].classList.toggle('right-slider-div');
+  benefitArray[3].classList.toggle('left-slider-div');
+  benefitArray[3].style.transition = '.75s ease-in-out';
+  benefitArray[0].style.zIndex = '4';
+  benefitArray[1].style.zIndex = '4';
+  benefitArray[2].style.zIndex = '3';
+  benefitArray[3].style.zIndex = '2';
+  benefitArray[4].style.zIndex = '1';
+  benefitArray = arrayReverseRotate(benefitArray);
+  console.log(benefitArray);
+});
+//on nextBtn click:
+//maindiv to the right with classes changed to the side and the right
+//one of left classes to the main and class changed to the main
+//one of right classes to the left with class changed from right to left
+
+/*
 nextBtn.addEventListener('click', () => {
   for (let i = 0; i < benefitArray.length; i++) {
     if (benefitArray[i].classList.contains('main-slider-div')) {
@@ -63,22 +120,5 @@ prevBtn.addEventListener('click', () => {
       benefitArray[i].classList.remove('side-benefit-wrapper');
     }
   }
-});
-
-//on click move each array object position in array
-//element [0] will always have main class, all other will have side class
-
-/*
-const mainDiv = document.querySelector('.main-slider-div');
-const leftDiv = document.querySelector('.left-slider-div');
-const rightDiv = document.querySelector('.right-slider-div');
-
-nextBtn.addEventListener('click', () => {
-  mainDiv.style.transform = 'translateX(75%)';
-  mainDiv.style.transition = '0.75s ease-in-out';
-  leftDiv.style.transform = 'translateX(-50%)';
-  leftDiv.style.transition = '0.75s ease-in-out';
-  rightDiv.style.transform = 'translateX(-175%)';
-  rightDiv.style.transition = '0.75s ease-in-out';
 });
 */
