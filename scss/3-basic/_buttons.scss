@@ -5,6 +5,7 @@ a.btn {
   color: var(--white);
   border-radius: 10px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 a.hero-btn {
@@ -49,4 +50,27 @@ a.other-btns {
   position: relative;
   margin-bottom: 1.73em;
   z-index: 2;
+}
+
+a.get-in-touch-btn {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--blue-light-gradient);
+    border-radius: 10px;
+    animation: mainBtn 0.75s ease-in-out;
+    animation-fill-mode: forwards;
+  }
 }

@@ -8,6 +8,7 @@ a.btn {
   color: var(--white);
   border-radius: 10px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 a.hero-btn {
@@ -65,6 +66,31 @@ a.other-btns {
   position: relative;
   margin-bottom: 1.73em;
   z-index: 2;
+}
+
+a.get-in-touch-btn {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+a.get-in-touch-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+a.get-in-touch-btn:hover::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--blue-light-gradient);
+  border-radius: 10px;
+  -webkit-animation: mainBtn 0.75s ease-in-out;
+          animation: mainBtn 0.75s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 :root {
@@ -1427,6 +1453,13 @@ main {
   background: var(--blue-darker);
   border-radius: 50%;
   margin-left: 1em;
+}
+
+.get-in-touch-btn-container {
+  width: 100%;
+  margin-top: 2.777em;
+  text-align: center;
+  height: 200px;
 }
 
 .section-title {
