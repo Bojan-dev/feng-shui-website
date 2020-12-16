@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .each-section {
   margin: 11.111em 0 0 0;
 }
