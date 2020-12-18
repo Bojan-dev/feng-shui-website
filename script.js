@@ -1,5 +1,12 @@
 'use strict';
 
+//NAVBAR STICKY
+
+window.addEventListener('scroll', function () {
+  const navbar = document.querySelector('nav');
+  navbar.classList.toggle('sticky', window.scrollY > 35);
+});
+
 //HERO AREA - SOCIAL ICONS DIV
 const heroSocialNetworks = document.querySelector('.hero-social-networks');
 
