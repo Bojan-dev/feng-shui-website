@@ -79,3 +79,17 @@ prevBtn.addEventListener('click', () => {
   benefitArray[4].style.zIndex = '1';
   benefitArray = arrayReverseRotate(benefitArray);
 });
+
+//ABOUT ME PICS
+const aboutMeFirstPic = document.querySelectorAll(
+  '.about-me-image-container'
+)[0];
+const aboutMeSecondPic = document.querySelectorAll(
+  '.about-me-image-container'
+)[1];
+const aboutMeThirdPic = document.querySelectorAll(
+  '.about-me-image-container'
+)[2];
+const aboutMeForthPic = document.querySelectorAll(
+  '.about-me-image-container'
+)[3];
