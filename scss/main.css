@@ -1801,8 +1801,6 @@ main {
   background: var(--blue-light-gradient-angle);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: socialAnim 0.5s ease-in-out;
-          animation: socialAnim 0.5s ease-in-out;
   font-size: 1.15em;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -1865,6 +1863,87 @@ main {
   background-repeat: no-repeat;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+}
+
+.quote {
+  width: 100%;
+  margin-top: 16.67em;
+  color: white;
+}
+
+.quote .quote-quote {
+  background: var(--blue-light);
+  width: 5%;
+  padding-top: 5%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5em;
+}
+
+.quote .quote-quote p {
+  position: absolute;
+  font-weight: 500;
+  top: 50%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+
+.quote .quote-quote:first-of-type {
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.quote .quote-quote:last-of-type {
+  margin-left: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.quote-wrapper {
+  background: var(--beige-main);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  border-radius: 0 75px 0 75px;
+  padding: 3.887em 10em 3.333em 10em;
+}
+
+.quote-wrapper p:first-of-type {
+  font-size: 1.67em;
+  line-height: 2;
+}
+
+.quote-wrapper p:last-of-type {
+  margin-top: 2em;
+  margin-bottom: 0.35em;
+}
+
+.quote-wrapper .quote-bottom-line {
+  width: 10px;
+  height: 1px;
+  border-radius: 10px;
+  background: var(--blue-light);
 }
 
 .section-title {

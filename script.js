@@ -93,3 +93,11 @@ const aboutMeThirdPic = document.querySelectorAll(
 const aboutMeForthPic = document.querySelectorAll(
   '.about-me-image-container'
 )[3];
+
+//QUOTE - DIV HEIGHT = DIV WIDTH
+
+const quoteDivs = document.querySelectorAll('.quote-quote');
+
+quoteDivs.forEach((div) => {
+  div.style.height = getComputedStyle(div).width;
+});
