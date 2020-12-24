@@ -94,10 +94,23 @@ const aboutMeForthPic = document.querySelectorAll(
   '.about-me-image-container'
 )[3];
 
-//QUOTE - DIV HEIGHT = DIV WIDTH
+//QUOTE - ON HOVER CHANGE QUOTES BACKGROUND
 
-const quoteDivs = document.querySelectorAll('.quote-quote');
+const quoteWrapper = document.querySelector('.quote-wrapper');
+const quoteDivs = Array.from(document.getElementsByClassName('quote-quote'));
+const quoteLine = document.querySelector('.quote-bottom-line');
 
-quoteDivs.forEach((div) => {
-  div.style.height = getComputedStyle(div).width;
+quoteWrapper.addEventListener('mouseover', () => {
+  quoteDivs.forEach((div) => {
+    div.style.background = 'var(--blue-light-gradient)';
+  });
+  quoteLine.style.background = 'var(--blue-light-gradient)';
 });
+
+quoteWrapper.addEventListener('mouseout', () => {
+  quoteDivs.forEach((div) => {
+    div.style.background = 'var(--blue-light)';
+  });
+  quoteLine.style.background = 'var(--blue-light)';
+});
+quoteDivs.sibl;

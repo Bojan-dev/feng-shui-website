@@ -1798,7 +1798,7 @@ main {
 
 .about-me-social-icons-container .icons-wrapper .fab:hover::before,
 .about-me-social-icons-container .icons-wrapper .fas:hover::before {
-  background: var(--blue-light-gradient-angle);
+  background: var(--blue-light-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.15em;
@@ -1816,7 +1816,6 @@ main {
 }
 
 .about-me-images .about-me-image-container {
-  background: green;
   width: 20%;
   height: 25%;
   position: absolute;
@@ -1871,11 +1870,16 @@ main {
   color: white;
 }
 
-.quote .quote-quote {
+.quote .container {
+  position: relative;
+  height: 100%;
+}
+
+.quote .container .quote-quote {
   background: var(--blue-light);
   width: 5%;
   padding-top: 5%;
-  position: relative;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1888,27 +1892,30 @@ main {
   font-size: 2.5em;
 }
 
-.quote .quote-quote p {
+.quote .container .quote-quote p {
   position: absolute;
   font-weight: 500;
   top: 50%;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
+  -webkit-transform: translateY(-37.5%);
+          transform: translateY(-37.5%);
 }
 
-.quote .quote-quote:first-of-type {
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+.quote .container .quote-quote:first-of-type {
+  top: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
 }
 
-.quote .quote-quote:last-of-type {
-  margin-left: auto;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.quote .container .quote-quote:last-of-type {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
 }
 
 .quote-wrapper {
   background: var(--beige-main);
+  border: 1px solid var(--beige-main);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1930,7 +1937,7 @@ main {
 }
 
 .quote-wrapper p:first-of-type {
-  font-size: 1.67em;
+  font-size: 1.5em;
   line-height: 2;
 }
 

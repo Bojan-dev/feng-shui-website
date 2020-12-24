@@ -3,36 +3,44 @@
   margin-top: 16.67em;
   color: white;
 
-  .quote-quote {
-    background: var(--blue-light);
-    width: 5%;
-    padding-top: 5%;
+  .container {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
+    height: 100%;
 
-    p {
+    .quote-quote {
+      background: var(--blue-light);
+      width: 5%;
+      padding-top: 5%;
       position: absolute;
-      font-weight: 500;
-      top: 50%;
-      transform: translateY(-40%);
-    }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5em;
 
-    &:first-of-type {
-      transform: translate(50%, 50%);
-    }
+      p {
+        position: absolute;
+        font-weight: 500;
+        top: 50%;
+        transform: translateY(-37.5%);
+      }
 
-    &:last-of-type {
-      margin-left: auto;
-      transform: translate(-50%, -50%);
+      &:first-of-type {
+        top: 0;
+        transform: translate(50%, -50%);
+      }
+
+      &:last-of-type {
+        bottom: 0;
+        right: 0;
+        transform: translate(-50%, 50%);
+      }
     }
   }
 }
 
 .quote-wrapper {
   background: var(--beige-main);
+  border: 1px solid var(--beige-main);
   @include displayFlex(column, center);
   align-items: center;
   text-align: center;
@@ -42,7 +50,7 @@
   padding: 3.887em 10em 3.333em 10em;
 
   p:first-of-type {
-    font-size: 1.67em;
+    font-size: 1.5em;
     line-height: 2;
   }
 
