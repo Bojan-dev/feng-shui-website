@@ -4,7 +4,8 @@
 
 .get-in-touch-wrapper {
   margin-top: 6.5em;
-  background: url('/img/get\ in\ touch\ background.svg') no-repeat center;
+  background: url('/feng-shui-website/img/get\ in\ touch\ background.svg')
+    no-repeat center;
   padding: 200px 0;
   background-size: cover;
   width: 100%;
@@ -47,7 +48,7 @@
     justify-content: flex-end;
 
     .get-in-touch-pic {
-      background: url('/img/get\ in\ touch\ person\ 2.webp');
+      background: url('/feng-shui-website/img/get\ in\ touch\ person\ 2.webp');
       background-size: cover;
       background-position: center;
     }
@@ -70,7 +71,7 @@
   background: magenta;
   border-radius: 50%;
   z-index: 2;
-  background: url('/img/get\ in\ touch\ person\ 1.webp');
+  background: url('/feng-shui-website/img/get\ in\ touch\ person\ 1.webp');
   background-size: cover;
   background-position: center;
 }

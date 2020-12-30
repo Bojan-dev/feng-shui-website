@@ -14,7 +14,8 @@
   margin-top: 6.667em;
   margin-bottom: 5em;
   overflow: hidden;
-  background: url('/img/benefits\ section.webp') no-repeat center 25px;
+  background: url('/feng-shui-website/img/benefits\ section.webp') no-repeat
+    center 25px;
   background-size: cover;
   padding: 6.667em 0 3.33em 0;
   height: 650px;
@@ -101,7 +102,7 @@
 }
 
 .benefit-overall-wellbeing {
-  @include backgroundGradient('/img/overall\ wellbeing.webp');
+  @include backgroundGradient('/feng-shui-website/img/overall\ wellbeing.webp');
 }
 
 .left-slider-div {
@@ -110,7 +111,7 @@
 }
 
 .benefit-improve-success {
-  @include backgroundGradient('/img/improve\ sucess.webp');
+  @include backgroundGradient('/feng-shui-website/img/improve\ sucess.webp');
 }
 
 .right-slider-div {
@@ -119,15 +120,17 @@
 }
 
 .benefit-clearing-bad-energy {
-  @include backgroundGradient('/img/clearing\ bad\ energy.webp');
+  @include backgroundGradient(
+    '/feng-shui-website/img/clearing\ bad\ energy.webp'
+  );
 }
 
 .benefit-your-goal {
-  @include backgroundGradient('/img/realize\ goal.webp');
+  @include backgroundGradient('/feng-shui-website/img/realize\ goal.webp');
 }
 
 .benefit-your-potential {
-  @include backgroundGradient('/img/full\ potential.webp');
+  @include backgroundGradient('/feng-shui-website/img/full\ potential.webp');
 }
 
 .side-benefit-wrapper {

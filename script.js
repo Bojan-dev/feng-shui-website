@@ -103,6 +103,7 @@ const quoteLine = document.querySelector('.quote-bottom-line');
 quoteWrapper.addEventListener('mouseover', () => {
   quoteDivs.forEach((div) => {
     div.style.background = 'var(--blue-light-gradient)';
+    div.style.borderRadius = '0 30% 0 30%';
   });
   quoteLine.style.background = 'var(--blue-light-gradient)';
 });
@@ -110,6 +111,7 @@ quoteWrapper.addEventListener('mouseover', () => {
 quoteWrapper.addEventListener('mouseout', () => {
   quoteDivs.forEach((div) => {
     div.style.background = 'var(--blue-light)';
+    div.style.borderRadius = '0';
   });
   quoteLine.style.background = 'var(--blue-light)';
 });

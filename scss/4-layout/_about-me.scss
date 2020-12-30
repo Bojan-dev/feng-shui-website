@@ -241,14 +241,14 @@
     &:first-of-type {
       top: 0;
       transform: translateX(-50%);
-      background: url('/img/about-me-pic1.webp');
+      background: url('/feng-shui-website/img/about-me-pic1.webp');
       @include aboutMePic;
     }
 
     &:nth-of-type(2) {
       top: 0;
       right: 0;
-      background: url('/img/about-me-pic2.webp');
+      background: url('/feng-shui-website/img/about-me-pic2.webp');
       @include aboutMePic;
       transform: translateX(50%);
     }
@@ -256,7 +256,7 @@
     &:nth-of-type(3) {
       bottom: 0;
       left: 0;
-      background: url('/img/about-me-pic3.webp');
+      background: url('/feng-shui-website/img/about-me-pic3.webp');
       @include aboutMePic;
       transform: translateX(-50%);
     }
@@ -264,7 +264,7 @@
     &:last-of-type {
       bottom: 0;
       right: 0;
-      background: url('/img/about-me-pic4.webp');
+      background: url('/feng-shui-website/img/about-me-pic4.webp');
       @include aboutMePic;
       transform: translateX(50%);
     }

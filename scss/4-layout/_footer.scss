@@ -1,0 +1,205 @@
+footer {
+  margin-top: 20em;
+  background: url('/feng-shui-website/img/footer\ background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10em;
+  height: fit-content;
+  position: relative;
+  color: var(--white);
+
+  h3 {
+    text-align: center;
+    padding-top: 2.5em;
+
+    span {
+      color: var(--beige-main);
+      cursor: pointer;
+      position: relative;
+
+      &:hover::before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        bottom: -2px;
+        left: 0;
+        height: 2px;
+        background: var(--beige-main);
+        animation: moveToRight 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.footer-separation-line {
+  width: 50px;
+  background: var(--white);
+  height: 1px;
+  margin: 2.777em auto 1.5em auto;
+  border-radius: 10px;
+}
+
+.footer-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-data-column {
+  @include displayFlex(column, flex-start);
+
+  &:first-of-type {
+    align-items: flex-start;
+
+    p {
+      &:first-of-type {
+        margin-top: 0.5em;
+      }
+
+      margin-bottom: 0.5em;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &:nth-of-type(2) {
+    align-items: center;
+  }
+  &:last-of-type {
+    align-items: flex-end;
+  }
+}
+
+.footer-column-separation-line {
+  width: 35px;
+  height: 1px;
+  background: var(--beige-main);
+  margin: 0.555em 0 1.25em 0;
+}
+
+.footer-subscribe-form {
+  @include displayFlex(row, center);
+  align-items: center;
+  position: relative;
+  margin-top: 0.5em;
+
+  input {
+    background: none;
+    border: 2px solid var(--beige-main);
+    padding: 1.333em 10em 1.333em 1.333em;
+    outline: none;
+    border-radius: 10px;
+    color: var(--white);
+
+    &::placeholder {
+      color: var(--white);
+      font-style: italic;
+    }
+  }
+
+  div {
+    position: absolute;
+    height: 100%;
+    width: 55px;
+    background: var(--beige-main);
+    border-radius: 0 10px 10px 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.5s all;
+      background: var(--blue-light-gradient);
+      border-radius: 10px;
+    }
+  }
+}
+
+.footer-social-icons {
+  @include displayFlex(row, flex-start);
+  align-items: center;
+
+  div {
+    width: 70px;
+    height: 50px;
+    background: var(--beige-main);
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s all;
+
+    &:hover {
+      background: var(--blue-light-gradient);
+      border-radius: 10px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer-images {
+  @include displayFlex(row, flex-start);
+  align-items: center;
+  margin-top: 2.777em;
+
+  img {
+    height: 125px;
+    margin-right: 1em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.last-footer-line {
+  width: 50%;
+  height: 1px;
+  transform: scaleY(0.5);
+  margin-left: auto;
+  background: var(--white);
+  margin-top: 5em;
+}
+
+.footer-rights-reserved {
+  text-align: right;
+  font-size: 0.833em;
+  margin: 1.667em 0;
+}
+
+.footer-goodbye-illustration {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.footer-border-lines {
+  @include displayFlex(column, center);
+  align-items: flex-start;
+  position: absolute;
+  bottom: 7.5%;
+
+  &:last-of-type {
+    right: 0;
+    top: -25%;
+    align-items: flex-end;
+  }
+
+  div {
+    width: 40px;
+    background: var(--white);
+    height: 1px;
+    margin-bottom: 0.833em;
+
+    &:nth-of-type(2) {
+      width: 60px;
+      background: var(--beige-main);
+    }
+  }
+}

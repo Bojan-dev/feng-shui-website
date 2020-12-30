@@ -669,7 +669,7 @@ main {
   margin-top: 6.667em;
   margin-bottom: 5em;
   overflow: hidden;
-  background: url("/img/benefits section.webp") no-repeat center 25px;
+  background: url("/feng-shui-website/img/benefits section.webp") no-repeat center 25px;
   background-size: cover;
   padding: 6.667em 0 3.33em 0;
   height: 650px;
@@ -801,8 +801,8 @@ main {
 }
 
 .benefit-overall-wellbeing {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/overall wellbeing.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/overall wellbeing.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/feng-shui-website/img/overall wellbeing.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/feng-shui-website/img/overall wellbeing.webp");
 }
 
 .left-slider-div {
@@ -812,8 +812,8 @@ main {
 }
 
 .benefit-improve-success {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/improve sucess.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/improve sucess.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/feng-shui-website/img/improve sucess.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/feng-shui-website/img/improve sucess.webp");
 }
 
 .right-slider-div {
@@ -823,18 +823,18 @@ main {
 }
 
 .benefit-clearing-bad-energy {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/clearing bad energy.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/clearing bad energy.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/feng-shui-website/img/clearing bad energy.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/feng-shui-website/img/clearing bad energy.webp");
 }
 
 .benefit-your-goal {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/realize goal.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/realize goal.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/feng-shui-website/img/realize goal.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/feng-shui-website/img/realize goal.webp");
 }
 
 .benefit-your-potential {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/full potential.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/full potential.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/feng-shui-website/img/full potential.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/feng-shui-website/img/full potential.webp");
 }
 
 .side-benefit-wrapper {
@@ -1147,7 +1147,7 @@ main {
 }
 
 .each-programs-pricing:last-of-type .program-pricing-big-pic {
-  background: url("/img/business project pic.webp") no-repeat center;
+  background: url("/feng-shui-website/img/business project pic.webp") no-repeat center;
   background-size: cover;
 }
 
@@ -1163,7 +1163,7 @@ main {
 }
 
 .program-pricing-big-pic {
-  background: url("/img/residential project pic.webp") no-repeat center;
+  background: url("/feng-shui-website/img/residential project pic.webp") no-repeat center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -1348,7 +1348,7 @@ main {
 
 .get-in-touch-wrapper {
   margin-top: 6.5em;
-  background: url("/img/get in touch background.svg") no-repeat center;
+  background: url("/feng-shui-website/img/get in touch background.svg") no-repeat center;
   padding: 200px 0;
   background-size: cover;
   width: 100%;
@@ -1416,7 +1416,7 @@ main {
 }
 
 .get-in-touch-each-conversation:nth-of-type(2n) .get-in-touch-pic {
-  background: url("/img/get in touch person 2.webp");
+  background: url("/feng-shui-website/img/get in touch person 2.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1441,7 +1441,7 @@ main {
   background: magenta;
   border-radius: 50%;
   z-index: 2;
-  background: url("/img/get in touch person 1.webp");
+  background: url("/feng-shui-website/img/get in touch person 1.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1825,7 +1825,7 @@ main {
   top: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: url("/img/about-me-pic1.webp");
+  background: url("/feng-shui-website/img/about-me-pic1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1834,7 +1834,7 @@ main {
 .about-me-images .about-me-image-container:nth-of-type(2) {
   top: 0;
   right: 0;
-  background: url("/img/about-me-pic2.webp");
+  background: url("/feng-shui-website/img/about-me-pic2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1845,7 +1845,7 @@ main {
 .about-me-images .about-me-image-container:nth-of-type(3) {
   bottom: 0;
   left: 0;
-  background: url("/img/about-me-pic3.webp");
+  background: url("/feng-shui-website/img/about-me-pic3.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1856,7 +1856,7 @@ main {
 .about-me-images .about-me-image-container:last-of-type {
   bottom: 0;
   right: 0;
-  background: url("/img/about-me-pic4.webp");
+  background: url("/feng-shui-website/img/about-me-pic4.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1890,6 +1890,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2.5em;
+  -webkit-transition: 1s border-radius;
+  transition: 1s border-radius;
 }
 
 .quote .container .quote-quote p {
@@ -1951,6 +1953,311 @@ main {
   height: 1px;
   border-radius: 10px;
   background: var(--blue-light);
+}
+
+footer {
+  margin-top: 20em;
+  background: url("/feng-shui-website/img/footer background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  color: var(--white);
+}
+
+footer h3 {
+  text-align: center;
+  padding-top: 2.5em;
+}
+
+footer h3 span {
+  color: var(--beige-main);
+  cursor: pointer;
+  position: relative;
+}
+
+footer h3 span:hover::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background: var(--beige-main);
+  -webkit-animation: moveToRight 0.5s ease-in-out;
+          animation: moveToRight 0.5s ease-in-out;
+}
+
+.footer-separation-line {
+  width: 50px;
+  background: var(--white);
+  height: 1px;
+  margin: 2.777em auto 1.5em auto;
+  border-radius: 10px;
+}
+
+.footer-wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-data-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer-data-column:first-of-type {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-data-column:first-of-type p {
+  margin-bottom: 0.5em;
+}
+
+.footer-data-column:first-of-type p:first-of-type {
+  margin-top: 0.5em;
+}
+
+.footer-data-column:first-of-type p:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-data-column:nth-of-type(2) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-data-column:last-of-type {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer-column-separation-line {
+  width: 35px;
+  height: 1px;
+  background: var(--beige-main);
+  margin: 0.555em 0 1.25em 0;
+}
+
+.footer-subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 0.5em;
+}
+
+.footer-subscribe-form input {
+  background: none;
+  border: 2px solid var(--beige-main);
+  padding: 1.333em 10em 1.333em 1.333em;
+  outline: none;
+  border-radius: 10px;
+  color: var(--white);
+}
+
+.footer-subscribe-form input::-webkit-input-placeholder {
+  color: var(--white);
+  font-style: italic;
+}
+
+.footer-subscribe-form input:-ms-input-placeholder {
+  color: var(--white);
+  font-style: italic;
+}
+
+.footer-subscribe-form input::-ms-input-placeholder {
+  color: var(--white);
+  font-style: italic;
+}
+
+.footer-subscribe-form input::placeholder {
+  color: var(--white);
+  font-style: italic;
+}
+
+.footer-subscribe-form div {
+  position: absolute;
+  height: 100%;
+  width: 55px;
+  background: var(--beige-main);
+  border-radius: 0 10px 10px 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.footer-subscribe-form div:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background: var(--blue-light-gradient);
+  border-radius: 10px;
+}
+
+.footer-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-social-icons div {
+  width: 70px;
+  height: 50px;
+  background: var(--beige-main);
+  margin-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.footer-social-icons div:hover {
+  background: var(--blue-light-gradient);
+  border-radius: 10px;
+}
+
+.footer-social-icons div:last-of-type {
+  margin-right: 0;
+}
+
+.footer-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.777em;
+}
+
+.footer-images img {
+  height: 125px;
+  margin-right: 1em;
+}
+
+.footer-images img:last-of-type {
+  margin-right: 0;
+}
+
+.last-footer-line {
+  width: 50%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  margin-left: auto;
+  background: var(--white);
+  margin-top: 5em;
+}
+
+.footer-rights-reserved {
+  text-align: right;
+  font-size: 0.833em;
+  margin: 1.667em 0;
+}
+
+.footer-goodbye-illustration {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.footer-border-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  bottom: 7.5%;
+}
+
+.footer-border-lines:last-of-type {
+  right: 0;
+  top: -25%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer-border-lines div {
+  width: 40px;
+  background: var(--white);
+  height: 1px;
+  margin-bottom: 0.833em;
+}
+
+.footer-border-lines div:nth-of-type(2) {
+  width: 60px;
+  background: var(--beige-main);
 }
 
 .section-title {
