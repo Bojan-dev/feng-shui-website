@@ -1652,6 +1652,7 @@ main {
 
 .about-me-slider-arrows .fas:hover {
   opacity: 1;
+  scale: 1.1;
 }
 
 .about-me-all-texts {
@@ -1750,6 +1751,7 @@ main {
 .about-me-social-icons-container {
   width: 50%;
   margin: auto;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1760,12 +1762,13 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -75px;
-  position: relative;
 }
 
 .about-me-social-icons-container .icons-wrapper {
   width: 50%;
+  position: relative;
+  -webkit-transform: translateY(-155%);
+          transform: translateY(-155%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1773,26 +1776,18 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 5em;
-  gap: 33%;
-}
-
-.about-me-social-icons-container .icons-wrapper:last-of-type {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 5em;
 }
 
 .about-me-social-icons-container .icons-wrapper .fab,
 .about-me-social-icons-container .icons-wrapper .fas {
   cursor: pointer;
+  position: absolute;
   font-size: 2.75em;
 }
 
@@ -1804,6 +1799,22 @@ main {
   font-size: 1.15em;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+.about-me-social-icons-container .icons-wrapper .fa-facebook-f {
+  left: 25%;
+}
+
+.about-me-social-icons-container .icons-wrapper .fa-instagram {
+  right: 30%;
+}
+
+.about-me-social-icons-container .icons-wrapper .fa-linkedin-in {
+  left: 30%;
+}
+
+.about-me-social-icons-container .icons-wrapper .fa-envelope {
+  right: 25%;
 }
 
 .about-me-images {
@@ -1959,12 +1970,14 @@ footer {
   margin-top: 20em;
   background: url("/feng-shui-website/img/footer background.svg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   padding-top: 10em;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+  overflow-y: hidden;
   color: var(--white);
 }
 

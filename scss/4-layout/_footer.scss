@@ -2,10 +2,12 @@ footer {
   margin-top: 20em;
   background: url('/feng-shui-website/img/footer\ background.svg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   padding-top: 10em;
   height: fit-content;
   position: relative;
+  overflow-y: hidden;
   color: var(--white);
 
   h3 {

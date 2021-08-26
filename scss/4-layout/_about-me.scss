@@ -115,6 +115,7 @@
 
     &:hover {
       opacity: 1;
+      scale: 1.1;
     }
   }
 }
@@ -193,25 +194,20 @@
 .about-me-social-icons-container {
   width: 50%;
   margin: auto;
+  height: 50px;
   @include displayFlex(row, space-between);
-  margin-top: -75px;
-  position: relative;
 
   .icons-wrapper {
     width: 50%;
-    @include displayFlex(row, flex-start);
+    position: relative;
+    transform: translateY(-155%);
+    @include displayFlex(row, space-evenly);
     align-items: center;
-    margin-left: 5em;
-    gap: 33%;
-
-    &:last-of-type {
-      justify-content: flex-end;
-      margin-right: 5em;
-    }
 
     .fab,
     .fas {
       cursor: pointer;
+      position: absolute;
       font-size: 2.75em;
 
       &:hover::before {
@@ -221,6 +217,18 @@
         font-size: 1.15em;
         transition: 0.5s ease-in-out;
       }
+    }
+    .fa-facebook-f {
+      left: 25%;
+    }
+    .fa-instagram {
+      right: 30%;
+    }
+    .fa-linkedin-in {
+      left: 30%;
+    }
+    .fa-envelope {
+      right: 25%;
     }
   }
 }
